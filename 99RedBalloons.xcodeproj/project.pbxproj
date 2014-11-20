@@ -46,6 +46,7 @@
 		CB08B85C1A1DAE6E00EE25C4 /* RedBalloon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon2.jpg; sourceTree = "<group>"; };
 		CB08B85D1A1DAE6E00EE25C4 /* RedBalloon3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon3.jpg; sourceTree = "<group>"; };
 		CB08B85E1A1DAE6E00EE25C4 /* RedBalloon4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon4.jpg; sourceTree = "<group>"; };
+		CB08B8641A1DB06000EE25C4 /* BalloonStruct.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BalloonStruct.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 				CB08B8391A1DAD6200EE25C4 /* AppDelegate.swift */,
 				CB08B83B1A1DAD6200EE25C4 /* ViewController.swift */,
 				CB08B83D1A1DAD6200EE25C4 /* Main.storyboard */,
+				CB08B8641A1DB06000EE25C4 /* BalloonStruct.playground */,
 				CB08B8401A1DAD6200EE25C4 /* Images.xcassets */,
 				CB08B8421A1DAD6200EE25C4 /* LaunchScreen.xib */,
 				CB08B8371A1DAD6200EE25C4 /* Supporting Files */,
