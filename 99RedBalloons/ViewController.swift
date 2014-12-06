@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var howManyBalloonsLabel: UILabel!
+    @IBOutlet weak var background: UIImageView!
 
     var myBalloons:[Balloon] = []
 
@@ -17,7 +18,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        var myBalloonsNumber = 0
+       
+        do{
+       
+        myBalloonsNumber = myBalloonsNumber + 1
+      //  myBalloons.
+        myBalloons.number = myBalloonsNumber
+        myBalloons.balloonImage = myBalloons.assignBalloonImage()
+        
+            println(myBalloons.numberOfBalloons)
+            println(myBalloons.balloonImage)
+        
+        } while myBalloons.numberOfBalloons <= 99
+        
+        
+        
+        
+        
+        
+        
+        
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

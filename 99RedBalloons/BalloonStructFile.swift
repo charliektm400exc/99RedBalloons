@@ -1,22 +1,24 @@
-import UIKit
+import Foundation
+import UIkit
+
 
 struct Balloon {
-    var numberOfBalloons: Int = 0
-    var balloonImage = UIImage(named: "")
-}
+    var number: Int = 0
+    var Image = UIImage(named: "")
 
 
-func incrementBalloons() ->Int {
-    
-    var numberOfBalloons = 1
-    
-    do { numberOfBalloons = numberOfBalloons + 1
-        
-        println(numberOfBalloons)
-        
-        return numberOfBalloons
-    } while numberOfBalloons <= 99
-}
+
+//func incrementBalloons() ->Int {
+//    
+//    var numberOfBalloons = 1
+//    
+//    do { numberOfBalloons = numberOfBalloons + 1
+//        
+//        println(numberOfBalloons)
+//        
+//        return numberOfBalloons
+//    } while numberOfBalloons <= 99
+//}
 
 
 func assignBalloonImage() ->UIImage {
@@ -33,4 +35,6 @@ func assignBalloonImage() ->UIImage {
         println("Something has gone wrong in assigning images")    }
     
     return balloonImage
+}
+
 }

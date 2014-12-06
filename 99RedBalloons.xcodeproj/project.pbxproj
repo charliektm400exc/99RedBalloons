@@ -89,9 +89,9 @@
 		CB08B8361A1DAD6200EE25C4 /* 99RedBalloons */ = {
 			isa = PBXGroup;
 			children = (
+				CB08B83B1A1DAD6200EE25C4 /* ViewController.swift */,
 				CB2B4E2A1A2FED6000207BC2 /* BalloonStructFile.swift */,
 				CB08B8391A1DAD6200EE25C4 /* AppDelegate.swift */,
-				CB08B83B1A1DAD6200EE25C4 /* ViewController.swift */,
 				CB08B83D1A1DAD6200EE25C4 /* Main.storyboard */,
 				CB08B8401A1DAD6200EE25C4 /* Images.xcassets */,
 				CB08B8421A1DAD6200EE25C4 /* LaunchScreen.xib */,
