@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var background: UIImageView!
 
     var myBalloons:[Balloon] = []
+    
+    var currentIndex = 0
 
     
     override func viewDidLoad() {
@@ -20,26 +22,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         var myBalloonsNumber = 0
-       
-        do{
-       
-        myBalloonsNumber = myBalloonsNumber + 1
-      //  myBalloons.
-        myBalloons.number = myBalloonsNumber
-        myBalloons.balloonImage = myBalloons.assignBalloonImage()
         
-            println(myBalloons.numberOfBalloons)
-            println(myBalloons.balloonImage)
+        assignBalloonImage()
         
-        } while myBalloons.numberOfBalloons <= 99
-        
-        
-        
-        
-        
-        
-        
-        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,7 +34,40 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextBalloonButtonPressed(sender: UIBarButtonItem) {
+        
+        let balloon = myBalloons[currentIndex]
+        
+        howManyBalloonsLabel.text = "\(balloon.number) Balloons"
+        background.image = balloon.Image
+        
+        currentIndex += 1
+        
     }
+
+
+        func assignBalloonImage() {
+            for var balloonCount = 0; balloonCount <= 99; ++balloonCount {
+            var randomNumber = Int(arc4random_uniform(UInt32(4)))
+  //          var balloonImage: UIImage = UIImage(named: "")!
+            var balloon = Balloon()
+              
+                
+            balloon.number = balloonCount
+            switch randomNumber {
+            case 1: balloon.Image = UIImage(named: "RedBalloon1.jpg")!
+            case 2: balloon.Image = UIImage(named: "RedBalloon2.jpg")!
+            case 3: balloon.Image = UIImage(named: "RedBalloon3.jpg")!
+            case 0: balloon.Image = UIImage(named: "RedBalloon4.jpg")!
+                
+            default:
+                println("Something has gone wrong in assigning images")    }
+            
+            self.myBalloons.append(balloon)
+            }
+
+
+
 
 }
 
+}
